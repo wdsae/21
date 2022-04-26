@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:BusinessProcess xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44135d5b-6dbe-4e67-8d1b-8d10935ab8d2">
+  <producedTypes>
+    <objectType typeId="f1b90e29-81fe-4a7a-a68c-007ed6b4abac" valueTypeId="58cac7fd-c2cd-465b-bbf0-4140288bd908"/>
+    <refType typeId="fc6ff7fc-7350-49b0-b40a-66ca58be6a0d" valueTypeId="9e4b2a17-776c-4692-be60-6f8d3a95aa95"/>
+    <selectionType typeId="5a6827e2-9727-4130-94eb-907c516d20b7" valueTypeId="e7fa1210-e07b-49c9-ac9b-d4ceabba75d9"/>
+    <listType typeId="566be3b9-9148-4cb7-8d81-e83e46f9f202" valueTypeId="2de686ab-f2e9-4644-8c9a-60382639ace7"/>
+    <managerType typeId="705c644e-f927-4422-a843-14f06e0ca11d" valueTypeId="47a0fa9d-f49b-41d3-a400-5a379c07aed5"/>
+    <routePointRef typeId="c9d98a31-e002-4183-865f-986d22c5d841" valueTypeId="fa7799d8-c806-42cd-b7c3-5ba837836049"/>
+  </producedTypes>
+  <name>ТестированиеКандидата</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестирование кандидата</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>BusinessProcess.ТестированиеКандидата.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <editType>InDialog</editType>
+  <defaultObjectForm>BusinessProcess.ТестированиеКандидата.Form.ФормаЭлемента</defaultObjectForm>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <task>Task.ЗадачаТестированиеКандидата</task>
+  <createTaskInPrivilegedMode>true</createTaskInPrivilegedMode>
+  <attributes uuid="8557684c-55df-49de-848b-4363ec321cff">
+    <name>ФИО</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФИО</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>80</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="90f53a1b-332f-4522-aef5-2abfa7f77d76">
+    <name>Возраст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возраст</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="3d10400e-8d4b-4416-85d7-00bf9d3ceffe">
+    <name>ПройденТестАдминистрирование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пройден тест администрирование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="40f4b792-4c17-4814-8086-fd91c62907e0">
+    <name>ПройденТестПрограммирование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пройден тест программирование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="e56edb97-c5db-4b02-90e9-04cb79cb2fee">
+    <name>ПредложеннаяВакансия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предложенная вакансия</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Вакансии</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <forms uuid="40437f8c-c17f-4e59-b5ec-1d3231fd2387">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:BusinessProcess>
