@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e328f69c-6038-4314-917e-c555548ff501">
+  <producedTypes>
+    <objectType typeId="2da48da5-710a-4a6d-b5c2-4b7db6045490" valueTypeId="4ce805a1-e285-4d9d-9c14-d4ccbef004fd"/>
+    <refType typeId="54c0ed8a-20ff-4b73-96c6-738db300a11f" valueTypeId="dad6a9cd-a842-4267-9ca3-83cf010e3063"/>
+    <selectionType typeId="ed5e9dbb-248e-4359-9c63-eaf05ee3a863" valueTypeId="5a00a5a9-251f-48de-9730-b27ea15a4ba3"/>
+    <listType typeId="31dedcea-77dd-459e-b375-0f3c38b98387" valueTypeId="adbc7ba7-8f5d-4d9d-8227-0675f1b431ec"/>
+    <managerType typeId="59216853-13d6-4e22-bb41-f5e76a9456d5" valueTypeId="1d0ed764-0bdf-4d51-9aa2-e1ce5f07dfa1"/>
+  </producedTypes>
+  <name>НачислениеОклада</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисление оклада</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.НачислениеОклада.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>CalculationRegister.РегистрНачисленияЗарплаты</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="b6869d8b-5004-4879-a3d2-248533778b2f">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+</mdclass:Document>
