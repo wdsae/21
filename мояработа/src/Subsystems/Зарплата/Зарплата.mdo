@@ -12,4 +12,6 @@
   <content>InformationRegister.ГрафикПредприятия</content>
   <content>CalculationRegister.РегистрНачисленияЗарплаты</content>
   <content>Document.НачислениеОклада</content>
+  <content>Document.НеВыходСотрудника</content>
+  <content>Document.НачислениеПремии</content>
 </mdclass:Subsystem>
