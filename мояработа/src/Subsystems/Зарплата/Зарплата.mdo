@@ -14,4 +14,7 @@
   <content>Document.НачислениеОклада</content>
   <content>Document.НеВыходСотрудника</content>
   <content>Document.НачислениеПремии</content>
+  <content>AccumulationRegister.ЗадолженностьПередСотрудниками</content>
+  <content>Document.ВыплатаЗаработнойПлаты</content>
+  <content>Report.ЗадолженностьПередСотрудниками</content>
 </mdclass:Subsystem>
